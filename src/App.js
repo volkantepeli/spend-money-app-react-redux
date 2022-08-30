@@ -1,10 +1,17 @@
-import './App.css';
-import Homepage from './pages/Homepage';
+import { Container } from '@chakra-ui/react';
+
+import Header from './components/Header';
+import ContainerProducts from './components/Container';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className='App'>
-      <Homepage />
+    <div className="App">
+      <Container maxW="120vh">
+        <Header />
+        <ContainerProducts />
+        <Footer />
+      </Container>
     </div>
   );
 }
